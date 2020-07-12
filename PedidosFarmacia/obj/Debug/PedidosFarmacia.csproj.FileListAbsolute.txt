@@ -1,0 +1,15 @@
+C:\Users\Victor\source\repos\unir-laboratorio-2\PedidosFarmacia\bin\Debug\PedidosFarmacia.exe.config
+C:\Users\Victor\source\repos\unir-laboratorio-2\PedidosFarmacia\bin\Debug\PedidosFarmacia.exe
+C:\Users\Victor\source\repos\unir-laboratorio-2\PedidosFarmacia\bin\Debug\PedidosFarmacia.pdb
+C:\Users\Victor\source\repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\PedidosFarmacia.csprojAssemblyReference.cache
+C:\Users\Victor\source\repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\MainWindow.g.cs
+C:\Users\Victor\source\repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\App.g.cs
+C:\Users\Victor\source\repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\PedidosFarmacia_MarkupCompile.cache
+C:\Users\Victor\source\repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\PedidosFarmacia_MarkupCompile.lref
+C:\Users\Victor\source\repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\MainWindow.baml
+C:\Users\Victor\source\repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\PedidosFarmacia.g.resources
+C:\Users\Victor\source\repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\PedidosFarmacia.Properties.Resources.resources
+C:\Users\Victor\source\repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\PedidosFarmacia.csproj.GenerateResource.cache
+C:\Users\Victor\source\repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\PedidosFarmacia.csproj.CoreCompileInputs.cache
+C:\Users\Victor\source\repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\PedidosFarmacia.exe
+C:\Users\Victor\source\repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\PedidosFarmacia.pdb
