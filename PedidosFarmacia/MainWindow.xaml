@@ -23,11 +23,9 @@
         <Label Content="Cantidad de producto" HorizontalAlignment="Left" Margin="10,184,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="CantidadTextBox" HorizontalAlignment="Left" Height="23" Margin="10,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
         <Label Content="Distribuidor" HorizontalAlignment="Left" Margin="10,238,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="DistribuidorComboBox" HorizontalAlignment="Left" Margin="10,264,0,0" VerticalAlignment="Top" Width="170">
-            <ComboBoxItem Content="Cofarma" />
-            <ComboBoxItem Content="Empsephar" />
-            <ComboBoxItem Content="Cemefar" />
-        </ComboBox>
+        <RadioButton Content="Cofarma" GroupName="distribuidor" HorizontalAlignment="Left" Margin="10,264,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Empsephar" GroupName="distribuidor" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="88,264,0,0"/>
+        <RadioButton Content="Cemefar" HorizontalAlignment="Left" Margin="171,264,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
