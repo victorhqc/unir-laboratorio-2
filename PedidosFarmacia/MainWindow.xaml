@@ -22,6 +22,12 @@
         </ComboBox>
         <Label Content="Cantidad de producto" HorizontalAlignment="Left" Margin="10,184,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="CantidadTextBox" HorizontalAlignment="Left" Height="23" Margin="10,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
+        <Label Content="Distribuidor" HorizontalAlignment="Left" Margin="10,238,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="DistribuidorComboBox" HorizontalAlignment="Left" Margin="10,264,0,0" VerticalAlignment="Top" Width="170">
+            <ComboBoxItem Content="Cofarma" />
+            <ComboBoxItem Content="Empsephar" />
+            <ComboBoxItem Content="Cemefar" />
+        </ComboBox>
 
     </Grid>
 </Window>
