@@ -29,8 +29,8 @@
         <Label Content="Sucursal" HorizontalAlignment="Left" Margin="10,284,0,0" VerticalAlignment="Top"/>
         <CheckBox Content="Principal" HorizontalAlignment="Left" Margin="10,310,0,0" VerticalAlignment="Top"/>
         <CheckBox Content="Secundaria" HorizontalAlignment="Left" Margin="80,310,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="CancelarButton" Content="Cancelar" HorizontalAlignment="Left" Margin="7,359,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="AceptarButton" Content="Axeptar" HorizontalAlignment="Left" Margin="105,359,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="CancelarButton" Content="Cancelar" HorizontalAlignment="Left" Margin="7,359,0,0" VerticalAlignment="Top" Width="75" Click="CancelarButton_Click" />
+        <Button x:Name="AceptarButton" Content="Aceptar" HorizontalAlignment="Left" Margin="105,359,0,0" VerticalAlignment="Top" Width="75" Click="AceptarButton_Click" />
 
     </Grid>
 </Window>

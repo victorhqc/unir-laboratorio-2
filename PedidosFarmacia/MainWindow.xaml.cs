@@ -24,5 +24,15 @@ namespace PedidosFarmacia
         {
             InitializeComponent();
         }
+
+        private void AceptarButton_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Hello Aceptar");
+        }
+
+        private void CancelarButton_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Hello Cancelar");
+        }
     }
 }
