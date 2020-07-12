@@ -9,7 +9,17 @@
     <Grid>
         <Label Content="Pedido de Medicamentos" HorizontalAlignment="Left" Margin="301,10,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
         <Label Content="Nombre del medicamento" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="NombreInput" HorizontalAlignment="Left" Height="23" Margin="10,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="NombreInput" HorizontalAlignment="Left" Height="23" Margin="10,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <Label Content="Tipo de medicamento" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="MedicamentoComboBox" HorizontalAlignment="Left" Margin="10,157,0,0" VerticalAlignment="Top" Width="170">
+            <ComboBoxItem Content="Analgesico"/>
+            <ComboBoxItem Content="Analeptico"/>
+            <ComboBoxItem Content="Anestesico"/>
+            <ComboBoxItem Content="Antiacido"/>
+            <ComboBoxItem Content="Antidepresivo"/>
+            <ComboBoxItem Content="Antibiotico"/>
+
+        </ComboBox>
 
     </Grid>
 </Window>
