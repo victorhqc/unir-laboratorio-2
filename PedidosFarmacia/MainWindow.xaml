@@ -26,6 +26,11 @@
         <RadioButton Content="Cofarma" GroupName="distribuidor" HorizontalAlignment="Left" Margin="10,264,0,0" VerticalAlignment="Top"/>
         <RadioButton Content="Empsephar" GroupName="distribuidor" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="88,264,0,0"/>
         <RadioButton Content="Cemefar" HorizontalAlignment="Left" Margin="171,264,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sucursal" HorizontalAlignment="Left" Margin="10,284,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Principal" HorizontalAlignment="Left" Margin="10,310,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Secundaria" HorizontalAlignment="Left" Margin="80,310,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="CancelarButton" Content="Cancelar" HorizontalAlignment="Left" Margin="7,359,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="AceptarButton" Content="Axeptar" HorizontalAlignment="Left" Margin="105,359,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>
