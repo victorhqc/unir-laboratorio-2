@@ -28,3 +28,5 @@ C:\Users\victo\Source\Repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\Pedidos
 C:\Users\victo\Source\Repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\PedidosFarmacia.csproj.CoreCompileInputs.cache
 C:\Users\victo\Source\Repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\PedidosFarmacia.exe
 C:\Users\victo\Source\Repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\PedidosFarmacia.pdb
+C:\Users\victo\Source\Repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\Window1.g.cs
+C:\Users\victo\Source\Repos\unir-laboratorio-2\PedidosFarmacia\obj\Debug\Window1.baml

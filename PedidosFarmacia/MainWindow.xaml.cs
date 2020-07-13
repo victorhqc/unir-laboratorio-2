@@ -31,7 +31,21 @@ namespace PedidosFarmacia
             {
                 return;
             }
-            Console.WriteLine("Hello Aceptar");
+
+            Pedido pedido = new Pedido(
+                this.Medicamento_Name(),
+                this.Medicamento_Type(),
+                this.Medicamento_Amount(),
+                this.Medicamento_Distributor(),
+                this.Medicamento_Branch()
+            );
+
+
+            Window1 win = new Window1();
+            win.SetPedido(pedido);
+            win.ShowInTaskbar = false;
+            win.Owner = Application.Current.MainWindow;
+            win.Show();
         }
 
         private void CancelarButton_Click(object sender, RoutedEventArgs e)
@@ -50,7 +64,7 @@ namespace PedidosFarmacia
                 this.show_error("El nombre es incorrecto, porfavor revisa que hayas ingresado un nombre al medicamento.");
             }
 
-            if (isValid && !this.Validate_Provider())
+            if (isValid && !this.Validate_Type())
             {
                 isValid = false;
                 this.show_error("Por favor, elige un tipo de medicamento.");
@@ -79,43 +93,98 @@ namespace PedidosFarmacia
 
         private bool Validate_Name()
         {
-            string value = NombreTextBox.Text;
-
-            return value.Length > 0;
+            return this.Medicamento_Name().Length > 0;
         }
 
-        private bool Validate_Provider()
+        private string Medicamento_Name()
+        {
+            return NombreTextBox.Text;
+        }
+
+        private bool Validate_Type()
+        {
+            string value = this.Medicamento_Type();
+
+            return value != null;
+        }
+
+        private string Medicamento_Type()
         {
             ComboBoxItem item = (ComboBoxItem)MedicamentoComboBox.SelectedItem;
+            if (item == null)
+            {
+                return null;
+            }
 
-            return item != null;
+            return item.Content.ToString();
         }
 
         private bool Validate_Amount()
+        {
+            Int32 value = this.Medicamento_Amount();
+            return value > 0;
+        }
+
+        private Int32 Medicamento_Amount()
         {
             try
             {
                 string value = CantidadTextBox.Text;
                 int num = Int32.Parse(value);
 
-                return num > 0;
-            } catch(FormatException)
+                return num;
+            }
+            catch (FormatException)
             {
-                return false;
+                return -1;
             }
         }
 
         private bool Validate_Distributor()
         {
-            return CofarmaRadioButton.IsChecked == true
-                || EmpsepharRadioButton.IsChecked == true
-                || CemefarRadioButton.IsChecked == true;
+            return this.Medicamento_Distributor() != null;
+        }
+
+        private string Medicamento_Distributor()
+        {
+            if (CofarmaRadioButton.IsChecked == true)
+            {
+                return CofarmaRadioButton.Content.ToString();
+            }
+
+            if (EmpsepharRadioButton.IsChecked == true)
+            {
+                return EmpsepharRadioButton.Content.ToString();
+            }
+
+            if (CemefarRadioButton.IsChecked == true)
+            {
+                return CemefarRadioButton.Content.ToString();
+            }
+
+            return null;
         }
 
         private bool Validate_Branch()
         {
-            return PrincipalCheckBox.IsChecked == true
-                || SecundariaCheckBox.IsChecked == true;
+            return this.Medicamento_Branch().Count > 0;
+        }
+
+        private List<string> Medicamento_Branch()
+        {
+            List<string> sucursales = new List<string>();
+
+            if (PrincipalCheckBox.IsChecked == true)
+            {
+                sucursales.Add("principal");
+            }
+
+            if (SecundariaCheckBox.IsChecked == true)
+            {
+                sucursales.Add("secundaria");
+            }
+
+            return sucursales;
         }
 
         private void show_error(string e)
