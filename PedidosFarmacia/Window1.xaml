@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="Confirmación de Pedido" Height="250" Width="500">
     <Grid>
-        <Label Content="Pedido al distribuidor {{ distributor }}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-
+        <TextBlock x:Name="DescripcionTextBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="40" Width="475"/>
+        <TextBlock x:Name="DireccionTextBlock" HorizontalAlignment="Left" Margin="10,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="40" Width="475"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Aceptar" HorizontalAlignment="Left" Margin="111,151,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Label x:Name="ConfirmacionLabel" Content="" HorizontalAlignment="Left" Margin="214,148,0,0" VerticalAlignment="Top" Foreground="#FF269A04"/>
     </Grid>
 </Window>

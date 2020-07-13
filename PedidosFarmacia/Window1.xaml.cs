@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -29,6 +30,29 @@ namespace PedidosFarmacia
         public void SetPedido(Pedido pedido)
         {
             this.pedido = pedido;
+            this.SetTitle();
+            this.SetDescription();
+        }
+
+        private void SetTitle()
+        {
+            this.Title = $"Pedido al distribuidor {this.pedido.Distribuidor()}";
+        }
+
+        private void SetDescription()
+        {
+            DescripcionTextBlock.Text = $"{this.pedido.Cantidad()} unidades del {this.pedido.Tipo()} {this.pedido.Nombre()}";
+            DireccionTextBlock.Text = $"Para la farmacia situada en {this.pedido.Direccion()}";
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ConfirmacionLabel.Content = "Pedido enviado!";
         }
     }
 }
